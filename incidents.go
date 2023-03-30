@@ -110,11 +110,9 @@ type CreateIncidentRequestBody struct {
 }
 
 type CreateIncidentParams struct {
-	Name           string `json:"name,omitempty"`
-	Status         string `json:"status,omitempty"`
-	ImpactOverride string `json:"impact_override,omitempty"`
-	//ScheduledFor                              time.Time         `json:"scheduled_for,omitempty"`
-	//ScheduledUntil                            time.Time         `json:"scheduled_until,omitempty"`
+	Name                                      string            `json:"name,omitempty"`
+	Status                                    string            `json:"status,omitempty"`
+	ImpactOverride                            string            `json:"impact_override,omitempty"`
 	ScheduledRemindPrior                      bool              `json:"scheduled_remind_prior,omitempty"`
 	AutoTransitionToMaintenanceState          bool              `json:"auto_transition_to_maintenance_state,omitempty"`
 	AutoTransitionToOperationalState          bool              `json:"auto_transition_to_operational_state,omitempty"`

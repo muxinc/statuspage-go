@@ -26,9 +26,8 @@ type CreateMaintenanceRequestBody struct {
 }
 
 type CreateMaintenanceParams struct {
-	Name   string `json:"name,omitempty"`
-	Status string `json:"status,omitempty"`
-	//ImpactOverride                            string            `json:"impact_override,omitempty"`
+	Name                                      string            `json:"name,omitempty"`
+	Status                                    string            `json:"status,omitempty"`
 	ScheduledFor                              time.Time         `json:"scheduled_for,omitempty"`
 	ScheduledUntil                            time.Time         `json:"scheduled_until,omitempty"`
 	ScheduledRemindPrior                      bool              `json:"scheduled_remind_prior,omitempty"`
