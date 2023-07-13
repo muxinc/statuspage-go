@@ -114,7 +114,7 @@ func NewClient(token string, httpClient *http.Client) *Client {
 
 	c := &Client{
 		BaseURL:    baseURL,
-		httpClient: http.DefaultClient,
+		httpClient: httpClient,
 		Token:      token,
 		Version:    version,
 	}
